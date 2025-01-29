@@ -16,7 +16,7 @@ ELFATT offers 4-7x speedups over the vanilla softmax-based attention mechanism i
 ## Main Results on ImageNet
 | Method          | Pretrain     | Resolution | Acc@1 | FPS (nFA/FA)     |#      | FLOPs (nFA/FA) | 1K model |
 |:---:            | :---:        |  :---:     | :---: |            :---: | :---: |          :---: |    :---: |
-| CSWin-T-ELFATT  | ImageNet-1K  | 224<sup>2</sup>      | 83.1  | 2603/2856 imgs/s |  20M  |   4.44G/4.13G  |     [model](https://github.com/microsoft/CSWin-Transformer/releases/download/v0.1.0/cswin_tiny_224.pth)     | 
+| CSWin-T-ELFATT  | ImageNet-1K  | 224<sup>2</sup>      | 83.1  | 2603/2856 imgs/s |  20M  |   4.44G/4.13G  |     [model](https://github.com/Alicewithrabbit/ELFATT/releases/download/v0.1.0/cswin_elfatt_tiny_224.pth)     | 
 | CSWin-B-ELFATT  | ImageNet-1K  | 224<sup>2</sup>      | 84.7  | 1000/1187 imgs/s |  73M  |  15.47G/14.46G |      -   |
 | CSWin-B-ELFATT  | ImageNet-1K  | 384<sup>2</sup>      | 85.8  | 272/355 imgs/s   |  73M  |  51.21G/42.48G |      -   |
 | Swin-T-ELFATT   | ImageNet-1K  | 224<sup>2</sup>      | 82.7  | 2884/3159 imgs/s |  30M  |   4.99G/4.67G  |      -   | 
