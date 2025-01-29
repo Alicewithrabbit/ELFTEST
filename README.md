@@ -31,7 +31,7 @@ Note: CSWin-T represents CSWin-T-24182, and CSWin-B represents CSWin-B-36292. In
 | CSWin-T-ELFATT |   UperNet   | ImageNet-1K | 512<sup>2</sup> |        160k |            61.2 |            49.6 |     28/32 imgs/s |  50M  | 1014.26G/929.53G |
 | Swin-T-ELFATT  |   UperNet   | ImageNet-1K | 512<sup>2</sup> |        160k |            59.3 |            47.7 |     34/38 imgs/s |  62M  |  991.27G/943.94G |
 
-Note:
+Note: "mAcc" denotes mean class accuracy and "mIoU" denotes mean intersection over union. FLOPs are calculated using an input size of 512x2048. "160k" denotes the 160k fine-tuning iterations. Inference throughput is obtained using a batch size of 1 with mixed precision on a single NVIDIA H20 (96 GB) GPU.
 
 ## Main Results on MS COCO 2017
 | Backbone       |   Method    |  Pretrain   | LR Schedule |  AP<sup>b</sup> |  AP<sup>m</sup> | FPS (nFA/FA)     |#      |   FLOPs (nFA/FA) |
@@ -41,7 +41,7 @@ Note:
 | Swin-T-ELFATT  |  Mask-RCNN  | ImageNet-1K |          1x |            46.1 |            42.1 |     39/45 imgs/s |  50M  |  311.39G/266.43G |
 | Swin-T-ELFATT  |  Mask-RCNN  | ImageNet-1K |        3xMS |            48.5 |            43.6 |     39/45 imgs/s |  50M  |  311.39G/266.43G |
 
-Note: FLOPs are calculated using an input size of 1280x800. 1x denotes the fine-tuning training schedule with 12 epochs and 3xMS represents fine-tuning using the multiscale training schedule with 36 epochs. AP<sup>b</sup> denotes box average precision and AP<sup>m</sup> denotes mask average precision. Inference throughput is obtained using a batch size of 1 with mixed precision on a single NVIDIA H20 (96 GB) GPU.
+Note: FLOPs are calculated using an input size of 1280x800. "1x" denotes the fine-tuning training schedule with 12 epochs and "3xMS" represents fine-tuning using the multiscale training schedule with 36 epochs. AP<sup>b</sup> denotes box average precision and AP<sup>m</sup> denotes mask average precision. Inference throughput is obtained using a batch size of 1 with mixed precision on a single NVIDIA H20 (96 GB) GPU.
 
 ## Citation
 
