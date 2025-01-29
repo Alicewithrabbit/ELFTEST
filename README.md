@@ -8,12 +8,12 @@ This repo is the official PyTorch implementation of **ELFATT**.
 
 ELFATT (**E**fficient **L**inear **F**ast **ATT**ention) is a new attention acceleration method for vision transformers. It uses a hybrid-head architecture combining sparse attention with global linear attention to significantly improve speed without losing performance.
 
-**ELFATT formula for approximating a single block of a single-head vanilla attention mechanism**
+**ELFATT formula for approximating a single block of a single-head vanilla softmax-based attention mechanism**
 ```math
 {\rm softmax}\left(\textit{\textbf{Q}}\textit{\textbf{K}}^{\top}\right)\textit{\textbf{V}} + L\left(\textit{\textbf{V}}\right) \approx \left\lbrack{\rm softmax}\left(\bar{\textit{\textbf{Q}}}\right){\rm softmax}\left(\bar{\textit{\textbf{K}}}\right)^{\top}\bar{\textit{\textbf{V}}}+L\left(\bar{\textit{\textbf{V}}}\right), g\left({\rm softmax}\left(f(\tilde{\textit{\textbf{Q}}}) f(\tilde{\textit{\textbf{K}}})^{\top}\right)f(\tilde{\textit{\textbf{V}}})+L\left(f(\tilde{\textit{\textbf{V}}})\right)\right)\right\rbrack,
 ```
 
-**ELFATT formula for approximating a single block of a double-head vanilla attention mechanism**
+**ELFATT formula for approximating a single block of a double-head vanilla softmax-based attention mechanism**
 ```math
 \left\lbrack{\rm softmax}\left(\bar{\textit{\textbf{Q}}}\bar{\textit{\textbf{K}}}^{\top}\right)\bar{\textit{\textbf{V}}}+L\left(\bar{\textit{\textbf{V}}}\right), {\rm softmax}\left(\tilde{\textit{\textbf{Q}}}\tilde{\textit{\textbf{K}}}^{\top}\right)\tilde{\textit{\textbf{V}}}+L\left(\tilde{\textit{\textbf{V}}}\right)\right\rbrack\approx \left\lbrack{\rm softmax}\left(\bar{\textit{\textbf{Q}}}\right){\rm softmax}\left(\bar{\textit{\textbf{K}}}\right)^{\top}\bar{\textit{\textbf{V}}}+L\left(\bar{\textit{\textbf{V}}}\right), g\left({\rm softmax}\left(f(\tilde{\textit{\textbf{Q}}}) f(\tilde{\textit{\textbf{K}}})^{\top}\right)f(\tilde{\textit{\textbf{V}}})+L\left(f(\tilde{\textit{\textbf{V}}})\right)\right)\right\rbrack,
 ```
