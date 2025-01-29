@@ -6,7 +6,7 @@ This repo is the official PyTorch implementation of **ELFATT**.
 
 ## Introduction
 
-ELFATT (**E**fficient **L**inear **F**ast **ATT**ention) is a new attention acceleration method for vision transformers. It uses a hybrid head architecture combining sparse attention with global linear attention to significantly improve speed without losing performance.
+ELFATT (**E**fficient **L**inear **F**ast **ATT**ention) is a new attention acceleration method for vision transformers. It uses a hybrid-head architecture combining sparse attention with global linear attention to significantly improve speed without losing performance.
 
 ELFATT offers 4-7x speedups over the vanilla softmax-based attention mechanism in high-resolution vision tasks without losing performance. ELFATT is FlashAttention friendly. Using FlashAttention-2 acceleration, ELFATT still offers 2-3x speedups over the vanilla softmax-based attention mechanism on high-resolution vision tasks without losing performance. Even on edge GPUs, ELFATT still offers 1.6x to 2.0x speedups compared to state-of-the-art attention mechanisms in various power modes from 5W to 60W. Furthermore, ELFATT can be used to enhance and accelerate diffusion tasks directly without training.
 
