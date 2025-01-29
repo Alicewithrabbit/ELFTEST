@@ -106,6 +106,9 @@ If you find this repo helpful, please consider citing us.
 ## Acknowledgements
 The code is developed on the top of [Swin Transformer](https://github.com/microsoft/Swin-Transformer/tree/main), [CSWin Transformer](https://github.com/microsoft/CSWin-Transformer/tree/main), [FLatten Transformer](https://github.com/LeapLabTHU/FLatten-Transformer), and [Agent Attention](https://github.com/LeapLabTHU/Agent-Attention).
 
+## License
+[MIT License](https://github.com/Alicewithrabbit/ELFTEST/blob/main/LICENSE)
+
 ## Contact
 
 Please feel free to contact Chong Wu: [chong@innocimda.com](mailto:chong@innocimda.com) for help.
